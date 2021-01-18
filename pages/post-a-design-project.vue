@@ -13,6 +13,11 @@
       netlify
       netlify-honeypot="bot-field"
     >
+      <input
+        type="hidden"
+        name="post a design project"
+        value="post-a-design-project"
+      />
       <!-- Project info -->
       <section>
         <div class="container max-w-3xl">
