@@ -7,7 +7,7 @@
       </div>
     </section>
 
-    <form name="post a design project" method="POST" netlify>
+    <form name="post a design project" method="POST" data-netlify="true">
       <!-- Project info -->
       <section>
         <div class="container max-w-3xl">
@@ -23,7 +23,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="internship"
                   id="internship"
                 />
 
@@ -37,7 +37,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="graduation-project"
                   id="graduation-project"
                 />
 
@@ -51,7 +51,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="freelance"
                   id="freelance"
                 />
 
@@ -65,7 +65,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="paid"
                   id="paid"
                 />
 
@@ -79,7 +79,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="unpaid"
                   id="unpaid"
                 />
 
@@ -93,7 +93,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="research"
                   id="research"
                 />
 
@@ -107,7 +107,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="design"
                   id="design"
                 />
 
@@ -121,7 +121,7 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  name="categories"
+                  name="development"
                   id="development"
                 />
 
