@@ -32,6 +32,7 @@
         <h2>Clients</h2>
         <p class="mx-auto mb-2">
           Customers come to us with design issues that we translate into
+          <br />
           suitable solutions, such as complete style guides, websites and apps.
           New Designers members mainly work for external clients from the
           business world, but also do design work for THUAS lectorates and other
