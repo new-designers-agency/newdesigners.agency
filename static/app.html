@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    <form
+      name="post a design project"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="internship"
+        id="internship"
+      />
+
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="graduation-project"
+        id="graduation-project"
+      />
+
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="freelance"
+        id="freelance"
+      />
+
+      <input class="form-check-input" type="checkbox" name="paid" id="paid" />
+
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="unpaid"
+        id="unpaid"
+      />
+
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="research"
+        id="research"
+      />
+
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="design"
+        id="design"
+      />
+
+      <input
+        class="form-check-input"
+        type="checkbox"
+        name="development"
+        id="development"
+      />
+      <input
+        class="form-check-input"
+        type="radio"
+        name="language"
+        id="english-or-dutch"
+        checked
+      />
+
+      <input
+        class="form-check-input"
+        type="radio"
+        name="language"
+        id="only-english"
+      />
+
+      <input
+        class="form-check-input"
+        type="radio"
+        name="language"
+        id="only-dutch"
+      />
+      <input type="text" class="form-control" id="project-title" required />
+
+      <textarea
+        class="form-control"
+        id="project-description"
+        rows="3"
+        required
+      ></textarea>
+
+      <input type="text" class="form-control" id="estimated-duration" />
+
+      <input type="text" class="form-control" id="company-name" required />
+
+      <input
+        type="url"
+        class="form-control"
+        id="company-website-url"
+        required
+      />
+
+      <input type="text" class="form-control" id="contact-name" required />
+
+      <input type="email" class="form-control" id="contact-email" required />
+
+      <input type="tel" class="form-control" id="contact-phonenumber" />
+    </form>
+    {{ APP }}
+  </body>
+</html>

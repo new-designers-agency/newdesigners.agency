@@ -7,7 +7,17 @@
       </div>
     </section>
 
-    <form name="post a design project" method="POST" data-netlify="true">
+    <form
+      name="post a design project"
+      method="POST"
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      <input
+        type="hidden"
+        name="post a design project"
+        value="post a design project"
+      />
       <!-- Project info -->
       <section>
         <div class="container max-w-3xl">
