@@ -39,24 +39,24 @@
     p {
       @apply max-w-3xl mx-auto;
     }
-  }
 
-  section {
-    @apply py-3 bg-white;
-
-    &:nth-of-type(odd) {
-      @apply bg-gray;
-    }
-  }
-
-  @screen md {
     section {
-      @apply py-6;
-    }
-  }
+      @apply py-3 bg-white;
 
-  ::selection {
-    @apply bg-primary text-white;
+      &:nth-of-type(odd) {
+        @apply bg-gray;
+      }
+    }
+
+    @screen md {
+      section {
+        @apply py-6;
+      }
+    }
+
+    ::selection {
+      @apply bg-primary text-white;
+    }
   }
 }
 
