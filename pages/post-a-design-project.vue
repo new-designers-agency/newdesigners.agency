@@ -120,14 +120,14 @@
             />
           </div>
 
-          <!-- Company website URL -->
+          <!-- Company website -->
           <div class="form-group mb-4">
-            <label for="company-website-url">Company website URL *</label>
+            <label for="company-website">Company website *</label>
             <input
-              type="url"
-              name="company-website-url"
+              type="text"
+              name="company-website"
               class="form-control"
-              id="company-website-url"
+              id="company-website"
               required
             />
           </div>
