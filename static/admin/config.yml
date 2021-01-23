@@ -26,7 +26,7 @@ collections:
         name: "categorie"
         description: "Please check all categories that may apply."
         widget: "object"
-        collapsed: false
+        collapsed: true
         fields:
           - { label: "Internship", name: "internship", widget: "boolean" }
           - {
@@ -40,6 +40,19 @@ collections:
           - { label: "Research", name: "research", widget: "boolean" }
           - { label: "Design", name: "design", widget: "boolean" }
           - { label: "Development", name: "development", widget: "boolean" }
+      - label: "Languages"
+        name: "languages"
+        description: "Project language preference."
+        widget: "object"
+        collapsed: true
+        fields:
+          - {
+              label: "English or Dutch",
+              name: "english-or-dutch",
+              widget: "boolean",
+            }
+          - { label: "Only English", name: "only-english", widget: "boolean" }
+          - { label: "Only Dutch", name: "only-dutch", widget: "boolean" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
