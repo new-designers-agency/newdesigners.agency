@@ -27,7 +27,7 @@ collections:
 
       # Categories
       - label: "Categories"
-        name: "categorie"
+        name: "categories"
         description: "Please check all categories that may apply."
         widget: "object"
         collapsed: true
