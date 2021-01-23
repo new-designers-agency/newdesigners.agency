@@ -22,24 +22,25 @@
 
           <!-- Categories -->
           <div id="categories" class="form-group">
-            <span>Please check all categories that may apply.</span>
+            <span class="block mb-0.5"
+              >Please check all categories that may apply.</span
+            >
 
             <div class="flex flex-col flex-wrap sm:flex-row">
               <div
                 class="form-check"
-                v-for="category in categories"
-                :key="category"
+                v-for="(category, index) in categories"
+                :key="index"
               >
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  :name="category"
-                  :value="category"
-                  :id="category"
-                />
-
-                <label class="form-check-label" :for="category">
-                  {{ category | capitalize }}
+                <label :for="language | lowercase">
+                  <input
+                    type="checkbox"
+                    :name="category"
+                    :value="category"
+                    :id="category"
+                    class="form-check-input"
+                  />
+                  <span class="form-check-label">{{ category }}</span>
                 </label>
               </div>
             </div>
@@ -47,23 +48,22 @@
 
           <!-- Language -->
           <div class="form-group">
-            <span>Project language preference.</span>
+            <span class="block mb-0.5">Project language preference.</span>
 
             <div
               class="form-check"
-              v-for="language in languages"
-              :key="language"
+              v-for="(language, index) in languages"
+              :key="index"
             >
-              <input
-                class="form-check-input"
-                type="radio"
-                name="language"
-                :value="language"
-                :id="language | lowercase"
-              />
-
-              <label class="form-check-label" :for="language | lowercase">
-                {{ language }}
+              <label :for="language | lowercase">
+                <input
+                  type="radio"
+                  name="language"
+                  :value="language"
+                  :id="language"
+                  class="form-check-input"
+                />
+                <span class="form-check-label">{{ language }}</span>
               </label>
             </div>
           </div>
