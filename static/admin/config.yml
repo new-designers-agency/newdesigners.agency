@@ -32,18 +32,49 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Internship", name: "internship", widget: "boolean" }
+          - {
+              label: "Internship",
+              name: "internship",
+              widget: "boolean",
+              default: false,
+            }
           - {
               label: "Graduation project",
               name: "graduation-project",
               widget: "boolean",
+              default: false,
             }
-          - { label: "Freelance", name: "freelance", widget: "boolean" }
-          - { label: "Paid", name: "paid", widget: "boolean" }
-          - { label: "Unpaid", name: "unpaid", widget: "boolean" }
-          - { label: "Research", name: "research", widget: "boolean" }
-          - { label: "Design", name: "design", widget: "boolean" }
-          - { label: "Development", name: "development", widget: "boolean" }
+          - {
+              label: "Freelance",
+              name: "freelance",
+              widget: "boolean",
+              default: false,
+            }
+          - { label: "Paid", name: "paid", widget: "boolean", default: false }
+          - {
+              label: "Unpaid",
+              name: "unpaid",
+              widget: "boolean",
+              default: false,
+            }
+          - {
+              label: "Research",
+              name: "research",
+              widget: "boolean",
+              default: false,
+            }
+          - {
+              label: "Design",
+              name: "design",
+              widget: "boolean",
+              default: false,
+            }
+          - {
+              label: "Development",
+              name: "development",
+              widget: "boolean",
+              default: false,
+            }
 
       # Languages
       - label: "Languages"
@@ -56,9 +87,20 @@ collections:
               label: "English or Dutch",
               name: "english-or-dutch",
               widget: "boolean",
+              default: false,
             }
-          - { label: "Only English", name: "only-english", widget: "boolean" }
-          - { label: "Only Dutch", name: "only-dutch", widget: "boolean" }
+          - {
+              label: "Only English",
+              name: "only-english",
+              widget: "boolean",
+              default: false,
+            }
+          - {
+              label: "Only Dutch",
+              name: "only-dutch",
+              widget: "boolean",
+              default: false,
+            }
 
       # Project title
       - { label: "Project title", name: "projec-title", widget: "string" }
@@ -74,7 +116,7 @@ collections:
       - {
           label: "Estimated duration",
           name: "estimated-duration",
-          widget: "text",
+          widget: "string",
         }
 
       # Company name
