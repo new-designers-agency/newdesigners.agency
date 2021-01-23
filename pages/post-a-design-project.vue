@@ -38,7 +38,7 @@
                   :id="category | lowercase"
                 />
 
-                <label class="form-check-label" :for="category">
+                <label class="form-check-label" :for="category | lowercase">
                   {{ category }}
                 </label>
               </div>
@@ -62,7 +62,7 @@
                 :id="language | lowercase"
               />
 
-              <label class="form-check-label" :for="language">
+              <label class="form-check-label" :for="language | lowercase">
                 {{ language }}
               </label>
             </div>
