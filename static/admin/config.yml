@@ -82,3 +82,16 @@ collections:
 
       # Company website
       - { label: "Company website", name: "company-website", widget: "string" }
+
+      # Contact name
+      - { label: "Contact name", name: "contact-name", widget: "string" }
+
+      # Contact email
+      - { label: "Contact email", name: "contact-email", widget: "string" }
+
+      # Contact phone number
+      - {
+          label: "Contact phone number",
+          name: "contact-phone-number",
+          widget: "string",
+        }
