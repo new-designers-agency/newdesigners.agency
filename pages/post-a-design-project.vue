@@ -22,48 +22,48 @@
 
           <!-- Categories -->
           <div id="categories" class="form-group">
-            <span class="block mb-0.5"
-              >Please check all categories that may apply.</span
-            >
+            <span>Please check all categories that may apply.</span>
 
             <div class="flex flex-col flex-wrap sm:flex-row">
               <div
                 class="form-check"
-                v-for="category in categories"
-                :key="category"
+                v-for="(category, index) in categories"
+                :key="index"
               >
-                <label :for="category">
-                  <input
-                    type="checkbox"
-                    :name="category"
-                    :id="category"
-                    class="form-check-input"
-                  />
-                  <span class="form-check-label">{{
-                    category | capitalize
-                  }}</span>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  :name="category"
+                  :value="category"
+                  :id="category | lowercase"
+                />
+
+                <label class="form-check-label" :for="category">
+                  {{ category }}
                 </label>
               </div>
             </div>
           </div>
 
-          <!-- Language -->
-          <div class="form-group">
-            <span class="block mb-0.5">Project language preference.</span>
+          <!-- Languages -->
+          <div id="languages" class="form-group">
+            <span>Please check all categories that may apply.</span>
 
             <div
               class="form-check"
-              v-for="language in languages"
-              :key="language"
+              v-for="(language, index) in languages"
+              :key="index"
             >
-              <label :for="language | lowercase">
-                <input
-                  type="radio"
-                  name="language"
-                  :id="language | lowercase"
-                  class="form-check-input"
-                />
-                <span class="form-check-label">{{ language }}</span>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                :name="language"
+                :value="language"
+                :id="language | lowercase"
+              />
+
+              <label class="form-check-label" :for="language">
+                {{ language }}
               </label>
             </div>
           </div>
@@ -186,25 +186,19 @@ export default {
   data() {
     return {
       categories: [
-        "internship",
-        "graduation-project",
-        "freelance",
-        "paid",
-        "unpaid",
-        "research",
-        "design",
-        "development"
+        "Internship",
+        "Graduation project",
+        "Freelance",
+        "Paid",
+        "Unpaid",
+        "Research",
+        "Design",
+        "Development"
       ],
       languages: ["English or Dutch", "Only English", "Only Dutch"]
     };
   },
   filters: {
-    capitalize: function(value) {
-      if (!value) return "";
-      value = value.toString();
-      value = value.charAt(0).toUpperCase() + value.slice(1);
-      return value.replace("-", " ");
-    },
     lowercase: function(value) {
       if (!value) return "";
       value = value.toString();
