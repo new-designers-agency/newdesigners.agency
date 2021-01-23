@@ -34,6 +34,7 @@
                   class="form-check-input"
                   type="checkbox"
                   :name="category"
+                  :value="category"
                   :id="category"
                 />
 
@@ -57,6 +58,7 @@
                 class="form-check-input"
                 type="radio"
                 name="language"
+                :value="language"
                 :id="language | lowercase"
               />
 
