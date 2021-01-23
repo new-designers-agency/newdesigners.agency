@@ -77,21 +77,102 @@
               required
             />
           </div>
-          <div>
-            <label for="name" class="block">Name:</label>
-            <input type="text" name="name" class="border" required />
+
+          <!-- Project description -->
+          <div class="form-group">
+            <label for="project-description"
+              >Project description (e.g. what is your design problem?) *</label
+            >
+            <textarea
+              name="project-description"
+              class="form-control"
+              id="project-description"
+              rows="3"
+              required
+            ></textarea>
           </div>
-          <div>
-            <label for="email" class="block">Email:</label>
-            <input type="email" name="email" class="border" required />
+
+          <!-- Estimated duration -->
+          <div class="form-group">
+            <label for="estimated-duration"
+              >What is the estimated duration of the project? And deadline or
+              hurry?</label
+            >
+            <input
+              type="text"
+              name="estimated-duration"
+              class="form-control"
+              id="estimated-duration"
+            />
           </div>
-          <div>
-            <label for="message" class="block">Message:</label>
-            <textarea name="message" class="border" required></textarea>
+
+          <!-- Company name -->
+          <div class="form-group">
+            <label for="company-name">Company name *</label>
+            <input
+              type="text"
+              name="company-name"
+              class="form-control"
+              id="company-name"
+              required
+            />
           </div>
-          <button type="submit" value="Send message" class="btn btn-primary">
-            Send
-          </button>
+
+          <!-- Company website URL -->
+          <div class="form-group mb-4">
+            <label for="company-website-url">Company website URL *</label>
+            <input
+              type="url"
+              name="company-website-url"
+              class="form-control"
+              id="company-website-url"
+              required
+            />
+          </div>
+
+          <!-- Contact info -->
+          <h2 class="text-left mb-0">Contact info</h2>
+          <span class="block mb-1"
+            >Please leave your contact info here. We will contact you within
+            five working days.
+          </span>
+
+          <!-- Contact name -->
+          <div class="form-group">
+            <label for="contact-name">Your name *</label>
+            <input
+              type="text"
+              name="contact-name"
+              class="form-control"
+              id="contact-name"
+              required
+            />
+          </div>
+
+          <!-- Contact email -->
+          <div class="form-group">
+            <label for="contact-email">Your email address *</label>
+            <input
+              type="email"
+              name="contact-email"
+              class="form-control"
+              id="contact-email"
+              required
+            />
+          </div>
+
+          <!-- Contact phonenumber -->
+          <div class="form-group mb-4">
+            <label for="contact-phonenumber">Your phone number</label>
+            <input
+              type="tel"
+              name="contact-phonenumber"
+              class="form-control"
+              id="contact-phonenumber"
+            />
+          </div>
+
+          <button type="submit" class="btn">Post my project!</button>
         </div>
       </section>
     </form>
