@@ -13,9 +13,9 @@ locale: "en"
 show_preview_links: true
 
 collections:
-  - name: "e-mail"
-    label: "E-mail"
-    folder: "content/e-mail"
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
     format: "frontmatter"
     create: true
     slug: "{{slug}}"
