@@ -48,14 +48,16 @@
       }
     }
 
-    @screen md {
+    ::selection {
+      @apply bg-primary text-white;
+    }
+  }
+
+  @screen md {
+    main {
       section {
         @apply py-6;
       }
-    }
-
-    ::selection {
-      @apply bg-primary text-white;
     }
   }
 }
