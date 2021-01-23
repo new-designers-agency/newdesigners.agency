@@ -47,7 +47,7 @@
 
           <!-- Languages -->
           <div id="languages" class="form-group">
-            <span>Please check all categories that may apply.</span>
+            <span>Project language preference.</span>
 
             <div
               class="form-check"
