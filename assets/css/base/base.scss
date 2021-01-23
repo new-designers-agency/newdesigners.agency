@@ -27,10 +27,6 @@
     @apply text-blue-pacific uppercase mb-0.75;
   }
 
-  li {
-    @apply list-none;
-  }
-
   main {
     a:not(.nav-link):not(.btn):not([class*="text"]) {
       @apply text-blue-pacific underline transition-colors hover:text-primary;
@@ -41,7 +37,7 @@
     }
 
     p {
-      @apply max-w-3xl;
+      @apply max-w-3xl mx-auto;
     }
 
     section {
