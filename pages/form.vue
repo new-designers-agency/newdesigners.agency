@@ -23,6 +23,7 @@
             <label for="project-title">Project title *</label>
             <input
               type="text"
+              name="project-title"
               class="form-control"
               id="project-title"
               required
