@@ -32,15 +32,16 @@
                 v-for="(category, index) in categories"
                 :key="index"
               >
-                <label :for="language | lowercase">
+                <label :for="category">
                   <input
                     type="checkbox"
                     :name="category"
-                    :value="category"
                     :id="category"
                     class="form-check-input"
                   />
-                  <span class="form-check-label">{{ category }}</span>
+                  <span class="form-check-label">{{
+                    category | capitalize
+                  }}</span>
                 </label>
               </div>
             </div>
@@ -59,8 +60,7 @@
                 <input
                   type="radio"
                   name="language"
-                  :value="language"
-                  :id="language"
+                  :id="language | lowercase"
                   class="form-check-input"
                 />
                 <span class="form-check-label">{{ language }}</span>
