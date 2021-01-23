@@ -1,6 +1,6 @@
 ---
 publish-date: 2021-01-23T22:41:11.305Z
-categorie:
+categories:
   internship: false
   graduation-project: false
   freelance: true
