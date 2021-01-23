@@ -22,7 +22,27 @@ collections:
     editor:
       preview: false
     fields:
+      - label: "Categories"
+        name: "categorie"
+        description: "Please check all categories that may apply."
+        widget: "object"
+        collapsed: false
+        fields:
+          - { label: "Internship", name: "internship", widget: "boolean" }
+          - {
+              label: "Graduation project",
+              name: "graduation-project",
+              widget: "boolean",
+            }
+          - { label: "Freelance", name: "freelance", widget: "boolean" }
+          - { label: "Paid", name: "paid", widget: "boolean" }
+          - { label: "Unpaid", name: "unpaid", widget: "boolean" }
+          - { label: "Research", name: "research", widget: "boolean" }
+          - { label: "Design", name: "design", widget: "boolean" }
+          - { label: "Development", name: "development", widget: "boolean" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Public", name: "public", widget: "boolean", default: true }
+      - { label: "Name", name: "name", widget: "string" }
