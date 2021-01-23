@@ -8,17 +8,19 @@
   >
     <input type="hidden" name="form-name" value="contactus" />
     <div>
-      <label for="name">Name:</label>
-      <input type="text" name="name" required />
+      <label for="name" class="block">Name:</label>
+      <input type="text" name="name" class="border" required />
     </div>
     <div>
-      <input type="email" name="email" required />
-      <label for="email">Email:</label>
+      <label for="email" class="block">Email:</label>
+      <input type="email" name="email" class="border" required />
     </div>
     <div>
-      <textarea name="message" required></textarea>
-      <label for="message">Message:</label>
+      <label for="message" class="block">Message:</label>
+      <textarea name="message" class="border" required></textarea>
     </div>
-    <button type="submit" value="Send message">Send</button>
+    <button type="submit" value="Send message" class="btn btn-primary">
+      Send
+    </button>
   </form>
 </template>
