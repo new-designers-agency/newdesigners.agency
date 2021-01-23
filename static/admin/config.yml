@@ -22,6 +22,10 @@ collections:
     editor:
       preview: false
     fields:
+      # Publish date
+      - { label: "Publish date", name: "publish-date", widget: "datetime" }
+
+      # Categories
       - label: "Categories"
         name: "categorie"
         description: "Please check all categories that may apply."
@@ -40,6 +44,8 @@ collections:
           - { label: "Research", name: "research", widget: "boolean" }
           - { label: "Design", name: "design", widget: "boolean" }
           - { label: "Development", name: "development", widget: "boolean" }
+
+      # Languages
       - label: "Languages"
         name: "languages"
         description: "Project language preference."
@@ -53,9 +59,26 @@ collections:
             }
           - { label: "Only English", name: "only-english", widget: "boolean" }
           - { label: "Only Dutch", name: "only-dutch", widget: "boolean" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Public", name: "public", widget: "boolean", default: true }
-      - { label: "Name", name: "name", widget: "string" }
+
+      # Project title
+      - { label: "Project title", name: "projec-title", widget: "string" }
+
+      # Project description
+      - {
+          label: "Project description",
+          name: "project-description",
+          widget: "markdown",
+        }
+
+      # Estimated duration
+      - {
+          label: "Estimated duration",
+          name: "estimated-duration",
+          widget: "text",
+        }
+
+      # Company name
+      - { label: "Company name", name: "company-name", widget: "string" }
+
+      # Company website
+      - { label: "Company website", name: "company-website", widget: "string" }
