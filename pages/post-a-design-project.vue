@@ -56,8 +56,8 @@
             >
               <input
                 class="form-check-input"
-                type="checkbox"
-                :name="language"
+                type="radio"
+                name="language"
                 :value="language"
                 :id="language | lowercase"
               />
