@@ -124,7 +124,7 @@
           <div class="form-group mb-4">
             <label for="company-website">Company website *</label>
             <input
-              type="text"
+              type="url"
               name="company-website"
               class="form-control"
               id="company-website"
