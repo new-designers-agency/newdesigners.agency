@@ -29,8 +29,8 @@
             <div class="flex flex-col flex-wrap sm:flex-row">
               <div
                 class="form-check"
-                v-for="(category, index) in categories"
-                :key="index"
+                v-for="category in categories"
+                :key="category"
               >
                 <label :for="category">
                   <input
@@ -53,8 +53,8 @@
 
             <div
               class="form-check"
-              v-for="(language, index) in languages"
-              :key="index"
+              v-for="language in languages"
+              :key="language"
             >
               <label :for="language | lowercase">
                 <input
