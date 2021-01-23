@@ -13,8 +13,8 @@ locale: "en"
 show_preview_links: true
 
 collections:
-  - name: "projects"
-    label: "Projects"
+  - label: "Projects"
+    name: "projects"
     folder: "content/projects"
     format: "frontmatter"
     create: true
@@ -103,7 +103,7 @@ collections:
             }
 
       # Project title
-      - { label: "Project title", name: "projec-title", widget: "string" }
+      - { label: "Project title", name: "title", widget: "string" }
 
       # Project description
       - {
