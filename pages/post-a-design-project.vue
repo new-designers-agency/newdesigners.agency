@@ -165,12 +165,12 @@
 
           <!-- Contact phonenumber -->
           <div class="form-group mb-4">
-            <label for="contact-phonenumber">Your phone number</label>
+            <label for="contact-phone-number">Your phone number</label>
             <input
               type="tel"
-              name="contact-phonenumber"
+              name="contact-phone-number"
               class="form-control"
-              id="contact-phonenumber"
+              id="contact-phonen-umber"
             />
           </div>
 
