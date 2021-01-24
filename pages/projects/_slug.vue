@@ -7,43 +7,68 @@
       </div>
     </section>
 
-    <article>
-      <p class="mb-1">Posted at: {{ formatDate(project[`publish-date`]) }}</p>
+    <!-- Project -->
+    <section id="project">
+      <div class="container flex justify-between max-w-6xl">
+        <article class="pr-2 text-justify flex-1">
+          <p class="mb-1">
+            Posted at: {{ formatDate(project[`publish-date`]) }}
+          </p>
 
-      <div class="mb-1">
-        <p
-          v-for="(categorie, name, index) in project[`categories`]"
-          :key="index"
-        >
-          <span v-if="categorie === true"> {{ capitalize(name) }}</span>
-        </p>
+          <p class="mb-1 whitespace-pre-line">
+            {{ project[`project-description`] }}
+          </p>
+        </article>
+
+        <aside class="bg-gray shadow-md p-1 w-20">
+          <h2 class="text-left mb-1">Project info</h2>
+
+          <!-- Categories -->
+          <div class="mb-1">
+            <h4>Categories</h4>
+            <template v-for="(categorie, name, index) in project[`categories`]">
+              <span
+                v-if="categorie === true"
+                :key="index"
+                class="badge badge-primary"
+              >
+                {{ capitalize(name) }}</span
+              >
+            </template>
+          </div>
+
+          <!-- Languages -->
+          <div class="mb-1">
+            <h4>Languages</h4>
+            <template v-for="(language, name, index) in project[`languages`]">
+              <span v-if="language === true" :key="index">
+                {{ capitalize(name) }}</span
+              >
+            </template>
+          </div>
+
+          <!-- Estimated duration -->
+          <div class="mb-1">
+            <h4>Estimated duration</h4>
+            <span>{{ project[`estimated-duration`] }}</span>
+          </div>
+
+          <h2 class="text-left mb-1">Company info</h2>
+
+          <!-- Company name -->
+          <div class="mb-1">
+            <h4>Company name</h4>
+            <span>{{ project[`company-name`] }}</span>
+          </div>
+
+          <!-- Company website -->
+          <div class="mb-1">
+            <h4>Company website</h4>
+            <span>{{ project[`company-website`] }}</span>
+          </div>
+        </aside>
       </div>
-
-      <div class="mb-1">
-        <p v-for="(language, name, index) in project[`languages`]" :key="index">
-          <span v-if="language === true"> {{ capitalize(name) }}</span>
-        </p>
-      </div>
-
-      <p class="mb-1 whitespace-pre-line">
-        {{ project[`project-description`] }}
-      </p>
-
-      <p class="mb-1">
-        {{ project[`estimated-duration`] }}
-      </p>
-
-      <p class="mb-1">{{ project[`company-name`] }}</p>
-
-      <p class="mb-1">{{ project[`company-website`] }}</p>
-
-      <p class="mb-1">{{ project[`contact-name`] }}</p>
-
-      <p class="mb-1">{{ project[`contact-email`] }}</p>
-
-      <p>{{ project[`contact-phone-number`] }}</p>
-      <Project />
-    </article>
+    </section>
   </main>
 </template>
 
