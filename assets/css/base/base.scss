@@ -31,7 +31,7 @@
   }
 
   main {
-    a:not(.nav-link):not(.btn):not([class*="text"]) {
+    a:not(.nav-link):not(.btn):not([class*="text"]):not(.clickable-card) {
       @apply text-blue-pacific underline transition-colors hover:text-primary;
     }
 
