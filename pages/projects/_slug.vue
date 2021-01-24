@@ -9,13 +9,13 @@
 
     <!-- Project -->
     <section id="project">
-      <div class="container flex justify-between max-w-6xl">
+      <div class="container lg:flex justify-between max-w-6xl">
         <article class="pr-2 text-justify flex-1">
-          <p class="mb-1">
+          <p class="mb-1 mx-auto">
             Posted at: {{ formatDate(project[`publish-date`]) }}
           </p>
 
-          <p class="mb-1 whitespace-pre-line">
+          <p class="mb-1 mx-auto whitespace-pre-line">
             {{ project[`project-description`] }}
           </p>
         </article>
