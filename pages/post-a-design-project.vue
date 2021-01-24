@@ -35,10 +35,10 @@
                   type="checkbox"
                   :name="category"
                   :value="category"
-                  :id="category | lowercase"
+                  :id="lowercase(category)"
                 />
 
-                <label class="form-check-label" :for="category | lowercase">
+                <label class="form-check-label" :for="lowercase(category)">
                   {{ category }}
                 </label>
               </div>
@@ -59,10 +59,10 @@
                 type="radio"
                 name="language"
                 :value="language"
-                :id="language | lowercase"
+                :id="lowercase(language)"
               />
 
-              <label class="form-check-label" :for="language | lowercase">
+              <label class="form-check-label" :for="lowercase(language)">
                 {{ language }}
               </label>
             </div>
@@ -198,11 +198,11 @@ export default {
       languages: ["English or Dutch", "Only English", "Only Dutch"]
     };
   },
-  filters: {
-    lowercase: function(value) {
+  methods: {
+    lowercase(value) {
       if (!value) return "";
       value = value.toString();
-      return value.replace(/\s+/g, "-").toLowerCase();
+      return value.replace(/\s+/g, " ").toLowerCase();
     }
   }
 };
